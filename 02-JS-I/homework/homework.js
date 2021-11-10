@@ -51,7 +51,7 @@ function divide(x, y) {
 }
 
 function sonIguales(x, y) {
-  if (x == y) {
+  if (x === y) {
     return true;
   }
   else {
@@ -60,7 +60,7 @@ function sonIguales(x, y) {
 }
 
 function tienenMismaLongitud(str1, str2) {
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
     } else {
       return false;
@@ -97,7 +97,7 @@ function esPar(num) {
 }
 
 function esImpar(num) {
- if (num % 2 == 1) {
+ if (num % 2 === 1) {
    return true;
  } else {
    return false;
@@ -182,17 +182,13 @@ function deEuroAdolar(euro){
 
 
 function esVocal(letra){
-
-  if (letra.length > 1) {
+   if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+     return "Es vocal";
+   } else {
     return "Dato incorrecto";
-  } 
-  else if (letra = "a", "e", "i", "o", "u"); {
-    return "Es vocal";
-  } 
-  else {
-    return "Dato incorrecto";
-  }
+   }
 }
+
 
 
 
